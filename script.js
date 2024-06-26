@@ -1,4 +1,5 @@
-const agregarProductoAlcarrito = document.querySelectorAll(".add-to-cart");
+document.addEventListener("DOMContentLoaded", () =>  {
+    const agregarProductoAlcarrito = document.querySelectorAll(".add-to-cart");
 const mostrarPoductosAlcarrito = document.getElementById("cart-list");
 const mostrarTotal = document.getElementById("total");
 
@@ -52,3 +53,4 @@ function actualizarCarrito () {
 
     mostrarTotal.textContent = total.toFixed(2)
 }
+})
